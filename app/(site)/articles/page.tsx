@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { formatDate } from "@/lib/format";
-import { getAllPosts } from "@/lib/posts";
+import { getPublishedPosts } from "@/lib/posts";
 import s from "./articles.module.css";
 
 export const metadata: Metadata = {
@@ -10,9 +10,7 @@ export const metadata: Metadata = {
 };
 
 export default function Articles() {
-  const posts = getAllPosts();
-  const published = posts.filter((p) => !p.draft);
-  const upcoming = posts.filter((p) => p.draft);
+  const published = getPublishedPosts();
 
   return (
     <>
@@ -43,19 +41,6 @@ export default function Articles() {
         </ul>
       </section>
 
-      {upcoming.length > 0 && (
-        <section className={`container ${s.section}`} aria-labelledby="upcoming">
-          <h2 id="upcoming" className="label"><span>{String(upcoming.length).padStart(2, "0")}</span> In preparation</h2>
-          <ul className={s.rows}>
-            {upcoming.map((p) => (
-              <li key={p.slug} className={s.row}>
-                <span className={s.rowTitle}>{p.title}</span>
-                <span className={s.rowTopic}>{p.topic.replace(/^Draft · /, "")}</span>
-              </li>
-            ))}
-          </ul>
-        </section>
-      )}
     </>
   );
 }

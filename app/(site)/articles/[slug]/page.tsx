@@ -3,13 +3,13 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { ArticleBody, slugify } from "@/components/ArticleBody";
 import { formatDate } from "@/lib/format";
-import { getAllPosts, getPost } from "@/lib/posts";
+import { getPost, getPublishedPosts, getSections } from "@/lib/posts";
 import s from "./article.module.css";
 
 export const dynamicParams = false;
 
 export function generateStaticParams() {
-  return getAllPosts().filter((p) => !p.draft).map((p) => ({ slug: p.slug }));
+  return getPublishedPosts().map((p) => ({ slug: p.slug }));
 }
 
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> {
@@ -25,7 +25,7 @@ export default async function Article({ params }: { params: Promise<{ slug: stri
   const split = post.content.indexOf("\n## ");
   const intro = split === -1 ? "" : post.content.slice(0, split);
   const body = split === -1 ? post.content : post.content.slice(split);
-  const toc = [...body.matchAll(/^## (.+)$/gm)].map((m) => m[1]);
+  const toc = getSections(body);
 
   return (
     <article className={s.article}>

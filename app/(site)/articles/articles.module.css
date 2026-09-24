@@ -35,19 +35,9 @@
 
 .arrow { color: var(--coral); }
 
-.rows { list-style: none; margin: var(--space-6) 0 0; padding: 0; border-top: 1px solid var(--ink); }
-
-.row { display: grid; grid-template-columns: 1fr 200px; gap: var(--space-6); padding: 18px 0; border-bottom: 1px solid var(--line); align-items: baseline; }
-
-.rowTitle { font-size: 21px; line-height: 34px; font-weight: 500; letter-spacing: -0.01em; color: var(--ink-muted); }
-
-.rowTopic { font-family: var(--font-mono); font-weight: 500; font-size: 14px; color: var(--ink-muted); text-align: right; }
-
 @media (max-width: 600px) {
   .list { grid-template-columns: 1fr; }
   .card { padding: var(--space-6); }
-  .row { grid-template-columns: 1fr; gap: 4px; }
-  .rowTopic { text-align: left; }
 }
 
 @media (prefers-reduced-motion: reduce) { .card { transition: none; } .card:hover { transform: none; } }
