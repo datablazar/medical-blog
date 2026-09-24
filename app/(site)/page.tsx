@@ -19,9 +19,9 @@ export default function Home() {
           <p className="label"><span>§ 00</span> Independent science writing</p>
           <h1 className={s.title}>The science of the illnesses medicine <em>struggles to explain</em>.</h1>
           <p className={s.lede}>
-            Rigorous, readable explainers on ME/CFS, long COVID, hypermobile EDS and related
-            conditions. Written for patients, the curious and clinicians alike, with every claim
-            sourced and every uncertainty stated plainly.
+            Rigorous, evidence-based explainers on ME/CFS, long COVID, hypermobile EDS and related
+            conditions. Written for patients, the curious and clinicians alike: every claim sourced,
+            every uncertainty stated plainly, and the best available evidence put to use.
           </p>
           <div className={s.actions}>
             <Link href={href} className={s.primary}>Read the first explainer</Link>

@@ -7,7 +7,7 @@ export const metadata: Metadata = { title: "My story" };
 const principles = [
   { term: "Sourced", text: "Every factual claim links to its evidence, and I prefer systematic reviews and large studies to single small ones." },
   { term: "Plain", text: "I explain every medical term the first time I use it, so nobody needs a medical degree to follow along." },
-  { term: "Honest", text: "I say clearly what research shows, what it only suggests, and what nobody knows yet." },
+  { term: "Honest", text: "I say clearly what research shows, what it only suggests, and what nobody knows yet, and I use the best evidence available rather than waiting for perfect evidence." },
   { term: "Careful", text: "I don't recommend treatments or promise recovery. Diagrams that aren't real data say so." },
 ];
 
