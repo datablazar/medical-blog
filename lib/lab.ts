@@ -56,4 +56,12 @@ export const directions: Direction[] = [
     fonts: "Bricolage Grotesque · Figtree",
     palette: { bg: "#fbfbf8", ink: "#15171c", swatches: ["#15171c", "#d4ff3a", "#e8efe4", "#efe9df"] },
   },
+  {
+    slug: "instrument",
+    name: "Instrument",
+    idea: "Product-grade precision for science writing: crisp type, calibrated graphics, sourced diagrams, and your story up front.",
+    signature: "A calibrated dial of the six conditions, and a sourced diagram of post-exertional malaise.",
+    fonts: "Geist · Geist Mono",
+    palette: { bg: "#ffffff", ink: "#0b1624", swatches: ["#0b1624", "#ff5b3a", "#f5f7fa", "#e2e7ee"] },
+  },
 ];
