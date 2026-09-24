@@ -1,0 +1,12 @@
+.footer {
+  background: var(--paper-raised);
+  border-top: 1px solid var(--hairline);
+  padding: var(--space-10) 0;
+}
+
+.name {
+  font-family: var(--font-serif);
+  font-size: 21px;
+  line-height: 28px;
+  font-weight: 500;
+}

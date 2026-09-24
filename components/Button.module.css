@@ -1,0 +1,15 @@
+.button {
+  display: inline-flex;
+  align-items: center;
+  height: 40px;
+  padding: 0 var(--space-6);
+  border-radius: var(--radius-lg); /* pill: half the 40px height */
+  background: var(--brand);
+  color: var(--on-brand);
+  font-family: var(--font-sans);
+  font-size: 15px;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.button:hover { text-decoration: underline; }

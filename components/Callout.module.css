@@ -1,0 +1,18 @@
+.callout {
+  border-radius: var(--radius-md);
+  padding: var(--space-6);
+  color: var(--ink);
+}
+
+.title { margin-bottom: var(--space-2); }
+
+.in-short { background: var(--sage); }
+
+.good-to-know { background: var(--marigold-soft); }
+
+.urgent {
+  background: var(--paper);
+  border: 2px solid var(--danger);
+}
+
+.urgent .title { color: var(--danger); }
