@@ -1,0 +1,55 @@
+*, *::before, *::after { box-sizing: border-box; }
+
+html { -webkit-text-size-adjust: 100%; }
+
+body {
+  margin: 0;
+  background: var(--white);
+  color: var(--ink);
+  font-family: var(--font-sans);
+  font-size: 17px;
+  line-height: 28px;
+  -webkit-font-smoothing: antialiased;
+  overflow-x: clip;
+}
+
+h1, h2, h3, p, blockquote, figure { margin: 0; }
+
+a { color: inherit; }
+
+:focus-visible { outline: 2px solid var(--coral); outline-offset: 3px; border-radius: var(--radius-sm); }
+
+.container {
+  --gutter: var(--space-8);
+  max-width: var(--container);
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: var(--gutter);
+  padding-right: var(--gutter);
+}
+
+@media (max-width: 600px) {
+  .container { --gutter: 20px; }
+}
+
+/* A top hairline aligned to the content edge rather than the gutter. */
+.rule-top {
+  background-image: linear-gradient(var(--line), var(--line));
+  background-size: calc(100% - 2 * var(--gutter)) 1px;
+  background-position: center top;
+  background-repeat: no-repeat;
+}
+
+/* Section label: "§ 01  WHY THIS EXISTS" */
+.label {
+  display: inline-flex;
+  gap: var(--space-3);
+  font-family: var(--font-mono);
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--ink-muted);
+}
+
+.label span { color: var(--coral-text); }

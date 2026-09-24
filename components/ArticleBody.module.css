@@ -1,0 +1,76 @@
+.body { font-size: 18px; line-height: 30px; }
+
+.body > p, .body > ul, .body > ol { max-width: 38em; }
+
+.body p + p { margin-top: 18px; }
+
+.body ul, .body ol { margin: 18px 0; padding-left: 22px; }
+
+.body > ul > li + li, .body > ol > li + li { margin-top: 10px; }
+
+.body > ul > li::marker, .body > ol > li::marker { color: var(--ink-muted); font-family: var(--font-mono); font-size: 14px; }
+
+.body strong { font-weight: 600; }
+
+.h2 {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--space-3);
+  margin: 72px 0 20px;
+  padding-top: 24px;
+  border-top: 1px solid var(--line);
+  font-size: 32px;
+  line-height: 38px;
+  font-weight: 600;
+  letter-spacing: -0.03em;
+  scroll-margin-top: 24px;
+}
+
+.techBadge {
+  order: -1;
+  width: 100%;
+  font-family: var(--font-mono);
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 400;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--coral-text);
+}
+
+.h3 { margin: 44px 0 14px; font-size: 23px; line-height: 30px; font-weight: 600; letter-spacing: -0.02em; scroll-margin-top: 24px; }
+
+.cite { font-family: var(--font-mono); font-size: 11px; line-height: 0; margin-left: 1px; }
+
+.cite a { color: var(--coral-text); text-decoration: none; padding: 0 1px; border-radius: 3px; }
+
+.cite a:hover { background: var(--coral-tint); }
+
+.link { color: var(--ink); text-decoration-color: var(--coral); text-underline-offset: 3px; }
+
+.figure {
+  margin: 40px 0;
+  padding: 24px 24px 16px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-lg);
+  background: var(--white);
+  box-shadow: var(--shadow-figure);
+}
+
+.figure figcaption {
+  margin-top: 16px;
+  padding-top: 12px;
+  border-top: 1px solid var(--line);
+  font-size: 13px;
+  line-height: 20px;
+  color: var(--ink-muted);
+}
+
+.figure figcaption b { font-family: var(--font-mono); font-weight: 500; color: var(--ink); margin-right: 8px; }
+
+@media (max-width: 600px) {
+  .body { font-size: 17px; line-height: 28px; }
+  .h2 { font-size: 26px; line-height: 32px; margin-top: 56px; }
+  .figure { padding: 16px 14px 12px; margin-left: -6px; margin-right: -6px; }
+}

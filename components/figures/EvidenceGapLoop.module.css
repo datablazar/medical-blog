@@ -1,0 +1,78 @@
+.loop { display: flex; flex-direction: column; gap: var(--space-3); }
+
+.steps { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(4, 1fr); gap: 22px; }
+
+.step {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding: 14px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-md);
+  background: var(--surface);
+}
+
+.step:last-child { background: var(--coral-tint); border-color: #ffd9cf; }
+
+.step:not(:last-child)::after {
+  content: "→";
+  position: absolute;
+  right: -18px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--coral);
+  font-size: 16px;
+}
+
+.index { font-family: var(--font-mono); font-size: 11px; color: var(--coral-text); }
+
+.title { font-size: 15px; line-height: 20px; font-weight: 600; letter-spacing: -0.01em; }
+
+.note { font-size: 12px; line-height: 17px; color: var(--ink-muted); }
+
+.return { position: relative; height: 34px; }
+
+.returnLine {
+  position: absolute;
+  left: 12%;
+  right: 12%;
+  top: 0;
+  height: 22px;
+  border: 1.5px solid var(--coral);
+  border-top: 0;
+  border-radius: 0 0 10px 10px;
+}
+
+.returnLine::after {
+  content: "";
+  position: absolute;
+  left: -6.5px;
+  top: -2px;
+  border: 5px solid transparent;
+  border-bottom: 7px solid var(--coral);
+  border-top: 0;
+}
+
+.returnLabel {
+  position: absolute;
+  left: 50%;
+  top: 14px;
+  transform: translateX(-50%);
+  padding: 0 10px;
+  background: var(--white);
+  font-family: var(--font-mono);
+  font-size: 11px;
+  line-height: 16px;
+  color: var(--coral-text);
+  white-space: nowrap;
+}
+
+@media (max-width: 720px) {
+  .steps { grid-template-columns: 1fr; gap: 20px; }
+  .step:not(:last-child)::after { content: "↓"; right: auto; left: 50%; top: auto; bottom: -19px; transform: translateX(-50%); }
+  .return { height: auto; }
+  .returnLine { display: none; }
+  .returnLabel { position: static; transform: none; white-space: normal; padding: 0; }
+  .returnLabel::before { content: "↺ "; }
+}
