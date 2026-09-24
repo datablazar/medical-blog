@@ -1,0 +1,5 @@
+.logo { display: inline-flex; align-items: center; gap: 10px; font-weight: 600; font-size: 17px; letter-spacing: -0.01em; color: var(--ink); }
+
+.mark { position: relative; width: 18px; height: 18px; border-radius: 50%; border: 1.5px solid var(--ink); }
+
+.mark::after { content: ""; position: absolute; inset: 4px; border-radius: 50%; background: var(--coral); }

@@ -1,19 +1,10 @@
 import type { Metadata } from "next";
-import { Figtree, Newsreader } from "next/font/google";
+import { Geist, Geist_Mono } from "next/font/google";
 import "./tokens.css";
 import "./globals.css";
 
-const newsreader = Newsreader({
-  subsets: ["latin"],
-  weight: ["500", "600"],
-  variable: "--font-newsreader",
-});
-
-const figtree = Figtree({
-  subsets: ["latin"],
-  weight: ["400", "700"],
-  variable: "--font-figtree",
-});
+const geist = Geist({ subsets: ["latin"], variable: "--font-geist" });
+const geistMono = Geist_Mono({ subsets: ["latin"], variable: "--font-geist-mono" });
 
 export const metadata: Metadata = {
   title: {
@@ -21,12 +12,12 @@ export const metadata: Metadata = {
     template: "%s · Medically Explained",
   },
   description:
-    "Clear, honest explanations of the science behind medically unexplained conditions.",
+    "Rigorous, readable science writing on ME/CFS, long COVID, fibromyalgia and related conditions.",
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en-GB" className={`${newsreader.variable} ${figtree.variable}`}>
+    <html lang="en-GB" className={`${geist.variable} ${geistMono.variable}`}>
       <body>{children}</body>
     </html>
   );

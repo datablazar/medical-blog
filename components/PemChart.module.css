@@ -1,0 +1,28 @@
+.chart { display: block; width: 100%; height: auto; }
+
+.window { fill: var(--coral-tint); }
+
+.axis { stroke: var(--line-strong); }
+
+.activity { fill: var(--ink); }
+
+.curve {
+  fill: none;
+  stroke: var(--coral);
+  stroke-width: 3;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-dasharray: 1;
+  stroke-dashoffset: 0;
+  animation: draw 1.8s 0.4s cubic-bezier(0.6, 0, 0.2, 1) both;
+}
+
+@keyframes draw { from { stroke-dashoffset: 1; } }
+
+.peak { fill: var(--white); stroke: var(--coral); stroke-width: 2.5; }
+
+.label { font-family: var(--font-mono); font-size: 11px; fill: var(--ink-muted); }
+
+.strong { font-family: var(--font-mono); font-size: 11px; fill: var(--ink); font-weight: 500; }
+
+@media (prefers-reduced-motion: reduce) { .curve { animation: none; } }

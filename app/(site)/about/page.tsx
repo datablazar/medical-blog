@@ -1,50 +1,54 @@
 import type { Metadata } from "next";
-import { Callout } from "@/components/Callout";
+import { disclaimer, story } from "@/lib/site-content";
+import s from "./about.module.css";
 
-export const metadata: Metadata = {
-  title: "About",
-};
+export const metadata: Metadata = { title: "My story" };
+
+const principles = [
+  { term: "Sourced", text: "Every factual claim links to its evidence, and I prefer systematic reviews and large studies to single small ones." },
+  { term: "Plain", text: "I explain every medical term the first time I use it, so nobody needs a medical degree to follow along." },
+  { term: "Honest", text: "I say clearly what research shows, what it only suggests, and what nobody knows yet." },
+  { term: "Careful", text: "I don't recommend treatments or promise recovery. Diagrams that aren't real data say so." },
+];
 
 export default function About() {
   return (
-    <div className="container">
-      <div className="measure">
-        <p className="t-kicker kicker-accent">About</p>
-        <h1 className="t-h1" style={{ marginTop: "var(--space-2)" }}>
-          Why we write Medically Explained
-        </h1>
+    <>
+      <section className={`container ${s.intro}`}>
+        <p className="label"><span>§ 01</span> My story</p>
+        <h1 className={s.title}>From medical student to patient, <em>and back to the science</em>.</h1>
+      </section>
 
-        <div className="stack section">
-          <p>
-            Many people live with symptoms that doctors struggle to explain. Conditions such as
-            myalgic encephalomyelitis (ME/CFS), fibromyalgia and long COVID are real and can be
-            disabling, yet the science behind them is still developing and is often hard to follow.
-          </p>
-          <p>
-            We read the research so you can understand it. Our aim is to explain what is known,
-            what is not yet known, and how scientists are trying to find out.
-          </p>
+      <section className={`container rule-top ${s.story}`} aria-label="My story">
+        <blockquote className={s.quote}>&ldquo;{story.quote}&rdquo;</blockquote>
+        <div className={s.body}>
+          {story.paragraphs.map((p) => <p key={p.slice(0, 24)}>{p}</p>)}
         </div>
+      </section>
 
-        <h2 className="t-h2 section">How we write</h2>
-        <ul className="stack">
-          <li>We base each article on published research and link to our sources.</li>
-          <li>We explain medical terms the first time we use them.</li>
-          <li>
-            We say plainly when evidence is limited or disputed, using phrases such as
-            &ldquo;research suggests&rdquo; rather than overstating findings.
-          </li>
-          <li>We do not recommend treatments or make promises about recovery.</li>
-        </ul>
+      <section className={`container ${s.how}`} aria-labelledby="how-title">
+        <p className="label"><span>§ 02</span> How I write</p>
+        <h2 id="how-title" className={s.h2}>Four rules for every article</h2>
+        <dl className={s.rules}>
+          {principles.map((p, i) => (
+            <div key={p.term} className={s.rule}>
+              <dt>
+                <span className={s.num}>{String(i + 1).padStart(2, "0")}</span>
+                {p.term}
+              </dt>
+              <dd>{p.text}</dd>
+            </div>
+          ))}
+        </dl>
+      </section>
 
-        <div className="section">
-          <Callout variant="good-to-know" title="This is not medical advice">
-            <p>
-              This is general information, not a substitute for advice from your GP or pharmacist.
-            </p>
-          </Callout>
+      <section className={`container ${s.notice}`} aria-labelledby="notice-title">
+        <div className={s.noticeCard}>
+          <p className="label"><span>§ 03</span> Please note</p>
+          <h2 id="notice-title" className={s.noticeTitle}>This is not medical advice</h2>
+          <p>{disclaimer} If your symptoms change suddenly or you feel very unwell, contact NHS 111, or 999 in an emergency.</p>
         </div>
-      </div>
-    </div>
+      </section>
+    </>
   );
 }
