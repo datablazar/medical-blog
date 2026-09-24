@@ -10,10 +10,9 @@ export function SiteHeader() {
       </Link>
       <nav aria-label="Main">
         <ul className={styles.nav}>
-          <li><Link href="/#conditions">Conditions</Link></li>
           <li><Link href="/articles">Explainers</Link></li>
           <li><Link href="/about">My story</Link></li>
-          <li><Link href="/#latest" className={styles.cta}>Latest articles</Link></li>
+          <li><Link href="/articles/levels-of-evidence" className={styles.cta}>Start here</Link></li>
         </ul>
       </nav>
     </header>

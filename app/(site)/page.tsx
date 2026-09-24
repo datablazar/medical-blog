@@ -1,13 +1,16 @@
 import Link from "next/link";
-import { Dial } from "@/components/Dial";
-import { PemChart } from "@/components/PemChart";
+import { EvidenceLadder } from "@/components/figures/EvidenceLadder";
 import { formatDate } from "@/lib/format";
-import { getAllPosts } from "@/lib/posts";
-import { articleCount, conditions, countLabel, story } from "@/lib/site-content";
+import { countFigures, getPost, getPublishedPosts, getSections } from "@/lib/posts";
+import { story } from "@/lib/site-content";
 import s from "./home.module.css";
 
 export default function Home() {
-  const posts = getAllPosts();
+  // The lead feature is the newest published explainer.
+  const latest = getPublishedPosts()[0];
+  const post = latest ? getPost(latest.slug) : undefined;
+  const href = post ? `/articles/${post.slug}` : "/articles";
+  const sections = post ? getSections(post.content) : [];
 
   return (
     <>
@@ -16,114 +19,68 @@ export default function Home() {
           <p className="label"><span>§ 00</span> Independent science writing</p>
           <h1 className={s.title}>The science of the illnesses medicine <em>struggles to explain</em>.</h1>
           <p className={s.lede}>
-            Rigorous, readable explainers on ME/CFS, long COVID, fibromyalgia and related
+            Rigorous, readable explainers on ME/CFS, long COVID, hypermobile EDS and related
             conditions. Written for patients, the curious and clinicians alike, with every claim
             sourced and every uncertainty stated plainly.
           </p>
           <div className={s.actions}>
-            <a href="#explainer" className={s.primary}>Read the featured explainer</a>
-            <a href="#conditions" className={s.secondary}>Browse conditions</a>
+            <Link href={href} className={s.primary}>Read the first explainer</Link>
+            <a href="#story" className={s.secondary}>Why I write this</a>
           </div>
         </div>
-        <div className={s.heroArt}>
+        <Link href={href} className={s.heroArt} aria-label="The evidence ladder, from the first explainer">
           <span className={`${s.cross} ${s.tl}`} aria-hidden="true" />
           <span className={`${s.cross} ${s.br}`} aria-hidden="true" />
-          <Dial />
-        </div>
+          <EvidenceLadder />
+          <span className={s.heroCaption}>
+            <b>Fig. 1</b> The ladder of evidence, from the first explainer
+          </span>
+        </Link>
       </section>
 
       <div className="container" aria-hidden="true">
         <div className={s.ruler} />
       </div>
 
-      <section id="story" className={`container ${s.story}`} aria-labelledby="story-label">
-        <p id="story-label" className="label"><span>§ 01</span> Why this exists</p>
+      {post && (
+        <section className={`container ${s.feature}`} aria-labelledby="feature-title">
+          <p className="label"><span>§ 01</span> Start here</p>
+          <article className={s.card}>
+            <div className={s.cardMain}>
+              <p className={s.topic}>Explainer · {post.topic}</p>
+              <h2 id="feature-title" className={s.cardTitle}>
+                <Link href={href}>{post.title}</Link>
+              </h2>
+              <p className={s.summary}>{post.summary}</p>
+              <dl className={s.facts}>
+                <div><dt>Reading time</dt><dd>{post.readingTime} min</dd></div>
+                <div><dt>Sources</dt><dd>{post.references.length} references</dd></div>
+                <div><dt>Figures</dt><dd>{countFigures(post.content)}</dd></div>
+                <div><dt>Published</dt><dd>{formatDate(post.date)}</dd></div>
+              </dl>
+              <Link href={href} className={s.primary}>Read the explainer</Link>
+            </div>
+            <div className={s.cardSide}>
+              <p className={s.sideTitle}>Inside this explainer</p>
+              <ol className={s.sections}>
+                <li><span>00</span>From the author</li>
+                {sections.map((h, i) => (
+                  <li key={h}><span>{String(i + 1).padStart(2, "0")}</span>{h}</li>
+                ))}
+              </ol>
+            </div>
+          </article>
+        </section>
+      )}
+
+      <section id="story" className={`container rule-top ${s.story}`} aria-labelledby="story-label">
+        <p id="story-label" className="label"><span>§ 02</span> Why this exists</p>
         <blockquote className={s.quote}>&ldquo;{story.quote}&rdquo;</blockquote>
         <div className={s.storyBody}>
           {story.paragraphs.map((p) => <p key={p.slice(0, 24)}>{p}</p>)}
           <p className={s.signoff}>Former medical student · Writer and researcher</p>
+          <Link href="/about" className={s.textLink}>Read my full story →</Link>
         </div>
-      </section>
-
-      <section id="explainer" className={`container ${s.featured}`} aria-labelledby="explainer-title">
-        <div className={s.featuredHead}>
-          <p className="label"><span>§ 02</span> Featured explainer</p>
-          <span className={s.badge}>ME/CFS · Draft</span>
-        </div>
-        <div className={s.featuredGrid}>
-          <div>
-            <h2 id="explainer-title" className={s.h2}>Why a good day can cause a bad week</h2>
-            <p className={s.body}>
-              Post-exertional malaise is the worsening of symptoms after physical, mental or
-              emotional effort. What makes it distinctive is the delay: the crash often arrives
-              a day or two later, which makes cause and effect easy to miss.
-            </p>
-            <dl className={s.facts}>
-              <div><dt>Onset</dt><dd>Usually 12–48 hours after</dd></div>
-              <div><dt>Duration</dt><dd>Days, sometimes weeks</dd></div>
-              <div><dt>Source</dt><dd>US CDC, ME/CFS guidance</dd></div>
-            </dl>
-          </div>
-          <figure className={s.figure}>
-            <PemChart />
-            <figcaption>
-              <b>Fig. 1</b> Illustrative, not patient data. Timing and severity vary from person to person.
-            </figcaption>
-          </figure>
-        </div>
-      </section>
-
-      <section id="conditions" className={`container rule-top ${s.explorer}`} aria-labelledby="conditions-title">
-        <div className={s.explorerHead}>
-          <p className="label"><span>§ 03</span> Condition explorer</p>
-          <h2 id="conditions-title" className={s.h2}>Start with a condition</h2>
-        </div>
-        <div className={s.bento}>
-          {conditions.map((c, i) => {
-            const n = articleCount(c);
-            const size = i === 0 ? s.tileWide : i === conditions.length - 1 ? s.tileHalf : "";
-            return (
-              <article key={c.slug} className={`${s.tile} ${size}`}>
-                <span className={s.tileIndex}>{String(i + 1).padStart(2, "0")}</span>
-                <h3 className={s.tileName}>{c.name}</h3>
-                <span className={s.tileFull}>{c.full}</span>
-                <p className={s.tileSummary}>{c.summary}</p>
-                <div className={s.tileFoot}>
-                  <span className={s.systems}>
-                    {c.systems.map((x) => <span key={x}>{x}</span>)}
-                  </span>
-                  <span className={n ? s.count : s.soon}>{countLabel(n)}</span>
-                </div>
-              </article>
-            );
-          })}
-          <Link href="/articles/levels-of-evidence" className={`${s.tile} ${s.tileBasics}`}>
-            <span className={s.tileIndex}>Not sure where to start?</span>
-            <span className={s.tileName}>Begin with the basics</span>
-            <span className={s.tileSummary}>
-              How medicine ranks evidence, and why &ldquo;no evidence&rdquo; so rarely means nothing is wrong.
-            </span>
-            <span className={s.tileFoot}><span className={s.count}>Read the explainer →</span></span>
-          </Link>
-        </div>
-      </section>
-
-      <section id="latest" className={`container ${s.latest}`} aria-labelledby="latest-label">
-        <p id="latest-label" className="label"><span>§ 04</span> Latest</p>
-        <ul className={s.rows}>
-          {posts.map((p) => (
-            <li key={p.slug} className={s.row}>
-              <span className={s.rowDate}>{formatDate(p.date, { day: "2-digit", month: "short", year: "numeric" })}</span>
-              {p.draft ? (
-                <span className={s.rowTitle}>{p.title}</span>
-              ) : (
-                <Link href={`/articles/${p.slug}`} className={`${s.rowTitle} ${s.rowLink}`}>{p.title}</Link>
-              )}
-              <span className={s.rowTopic}>{p.topic}</span>
-              <span className={s.rowTime}>{p.readingTime} min</span>
-            </li>
-          ))}
-        </ul>
       </section>
     </>
   );

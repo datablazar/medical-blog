@@ -50,3 +50,18 @@ export function getPost(slug: string): Post | undefined {
   if (!/^[a-z0-9-]+$/.test(slug) || !fs.existsSync(path.join(postsDir, file))) return undefined;
   return read(file);
 }
+
+/** Posts that are live on the site. Drafts stay in the repo but are never listed or routed. */
+export function getPublishedPosts(): PostMeta[] {
+  return getAllPosts().filter((p) => !p.draft);
+}
+
+/** The article's section headings (its "## " lines, in order). */
+export function getSections(content: string): string[] {
+  return [...content.matchAll(/^## (.+)$/gm)].map((m) => m[1]);
+}
+
+/** Number of figures embedded with {{figure:name}}. */
+export function countFigures(content: string): number {
+  return (content.match(/\{\{figure:[a-z]+\}\}/g) ?? []).length;
+}
