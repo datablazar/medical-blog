@@ -86,7 +86,7 @@ export default async function Article({ params }: { params: Promise<{ slug: stri
             </ol>
           </section>
 
-          <p className={s.back}><Link href="/">← Back to all articles</Link></p>
+          <p className={s.back}><Link href="/articles">← All explainers</Link></p>
         </div>
       </div>
     </article>
