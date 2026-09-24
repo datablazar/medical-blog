@@ -207,6 +207,12 @@
 
 .rowTime { text-align: right; }
 
+.rowLink { color: var(--ink); text-decoration: none; background: linear-gradient(var(--coral), var(--coral)) no-repeat 0 100% / 0 1.5px; transition: background-size 0.25s; }
+
+.rowLink:hover { background-size: 100% 1.5px; }
+
+.rowLink::after { content: " →"; color: var(--coral); }
+
 @media (max-width: 960px) {
   .hero, .featuredGrid { grid-template-columns: 1fr; }
   .story { grid-template-columns: 1fr; gap: 24px; }

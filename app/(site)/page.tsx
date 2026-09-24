@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { Dial } from "@/components/Dial";
 import { PemChart } from "@/components/PemChart";
 import { formatDate } from "@/lib/format";
@@ -96,14 +97,14 @@ export default function Home() {
               </article>
             );
           })}
-          <a href="#latest" className={`${s.tile} ${s.tileBasics}`}>
+          <Link href="/articles/levels-of-evidence" className={`${s.tile} ${s.tileBasics}`}>
             <span className={s.tileIndex}>Not sure where to start?</span>
             <span className={s.tileName}>Begin with the basics</span>
             <span className={s.tileSummary}>
-              What &ldquo;medically unexplained&rdquo; really means, and why it never means imagined.
+              How medicine ranks evidence, and why &ldquo;no evidence&rdquo; so rarely means nothing is wrong.
             </span>
-            <span className={s.tileFoot}><span className={s.count}>Read the introduction →</span></span>
-          </a>
+            <span className={s.tileFoot}><span className={s.count}>Read the explainer →</span></span>
+          </Link>
         </div>
       </section>
 
@@ -113,7 +114,11 @@ export default function Home() {
           {posts.map((p) => (
             <li key={p.slug} className={s.row}>
               <span className={s.rowDate}>{formatDate(p.date, { day: "2-digit", month: "short", year: "numeric" })}</span>
-              <span className={s.rowTitle}>{p.title}</span>
+              {p.draft ? (
+                <span className={s.rowTitle}>{p.title}</span>
+              ) : (
+                <Link href={`/articles/${p.slug}`} className={`${s.rowTitle} ${s.rowLink}`}>{p.title}</Link>
+              )}
               <span className={s.rowTopic}>{p.topic}</span>
               <span className={s.rowTime}>{p.readingTime} min</span>
             </li>
