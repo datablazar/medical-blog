@@ -48,4 +48,12 @@ export const directions: Direction[] = [
     fonts: "IM Fell English · EB Garamond",
     palette: { bg: "#efe6d2", ink: "#2b1d14", swatches: ["#7a1f1a", "#3e6b5e", "#b08d3c", "#2b1d14"] },
   },
+  {
+    slug: "lumen",
+    name: "Lumen",
+    idea: "Ultraviolet's reveal meets Pacing's calm, in a light, airy, professional layout built for easy reading.",
+    signature: "A lime lens that follows the cursor and reveals hidden symptoms; energy cost on every article.",
+    fonts: "Bricolage Grotesque · Figtree",
+    palette: { bg: "#fbfbf8", ink: "#15171c", swatches: ["#15171c", "#d4ff3a", "#e8efe4", "#efe9df"] },
+  },
 ];

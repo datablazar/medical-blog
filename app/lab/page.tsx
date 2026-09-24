@@ -7,7 +7,7 @@ export default function LabIndex() {
     <div className={styles.page}>
       <header className={styles.header}>
         <p className={styles.eyebrow}>Medically Explained · Design lab</p>
-        <h1 className={styles.title}>Five directions</h1>
+        <h1 className={styles.title}>Six directions</h1>
         <p className={styles.lede}>
           Each is a complete homepage with its own palette, type, layout and signature interaction.
           They all use the same articles, so you can compare like for like. Pick one, or mix parts
