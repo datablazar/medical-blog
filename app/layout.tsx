@@ -1,7 +1,5 @@
 import type { Metadata } from "next";
 import { Figtree, Newsreader } from "next/font/google";
-import { SiteFooter } from "@/components/SiteFooter";
-import { SiteHeader } from "@/components/SiteHeader";
 import "./tokens.css";
 import "./globals.css";
 
@@ -29,11 +27,7 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en-GB" className={`${newsreader.variable} ${figtree.variable}`}>
-      <body>
-        <SiteHeader />
-        <main>{children}</main>
-        <SiteFooter />
-      </body>
+      <body>{children}</body>
     </html>
   );
 }

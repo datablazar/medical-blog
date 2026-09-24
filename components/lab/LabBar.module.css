@@ -1,0 +1,35 @@
+.bar {
+  position: fixed;
+  left: 50%;
+  bottom: 16px;
+  z-index: 100;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  padding: 4px;
+  border-radius: 999px;
+  background: #111;
+  color: #fff;
+  font: 500 14px/20px ui-sans-serif, system-ui, sans-serif;
+  box-shadow: 0 8px 30px rgb(0 0 0 / 0.25);
+  white-space: nowrap;
+}
+
+.bar a {
+  color: #fff;
+  text-decoration: none;
+  border-radius: 999px;
+}
+
+.bar a:hover { background: #333; }
+
+.bar a:focus-visible { outline: 2px solid #fff; outline-offset: 2px; }
+
+.home { padding: 8px 14px; background: #2a2a2a; }
+
+.arrow { padding: 8px 12px; }
+
+.label { display: inline-flex; gap: 10px; padding: 0 8px; min-width: 140px; justify-content: center; }
+
+.count { color: #9a9a9a; font-variant-numeric: tabular-nums; }
