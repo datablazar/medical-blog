@@ -2,6 +2,7 @@ import type { ReactNode } from "react";
 import ReactMarkdown, { type Components } from "react-markdown";
 import remarkGfm from "remark-gfm";
 import { EvidenceGapLoop } from "./figures/EvidenceGapLoop";
+import { EvidenceGrid } from "./figures/EvidenceGrid";
 import { EvidenceLadder } from "./figures/EvidenceLadder";
 import styles from "./ArticleBody.module.css";
 
@@ -27,8 +28,19 @@ const figures: Record<string, { n: number; render: () => ReactNode; caption: Rea
       </>
     ),
   },
-  loop: {
+  grid: {
     n: 2,
+    render: () => <EvidenceGrid />,
+    caption: (
+      <>
+        How the terms correspond. Rows are study designs, strongest first; columns are the translational stages from
+        laboratory to population. Schematic: dots show where each design is typically used, not counts of studies.
+        Stages after Fort et al.; levels from the Oxford 2011 table for treatment benefits.
+      </>
+    ),
+  },
+  loop: {
+    n: 3,
     render: () => <EvidenceGapLoop />,
     caption: (
       <>

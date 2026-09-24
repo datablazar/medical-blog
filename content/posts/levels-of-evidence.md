@@ -11,6 +11,12 @@ references:
     url: https://doi.org/10.1136/ebmed-2016-110401
   - text: "Woolf SH. The meaning of translational research and why it matters. JAMA. 2008;299(2):211–213."
     url: https://doi.org/10.1001/jama.2007.26
+  - text: "Fort DG, Herr TM, Shaw PL, Gutzman KE, Starren JB. Mapping the evolving definitions of translational research. J Clin Transl Sci. 2017;1(1):60–66."
+    url: https://pubmed.ncbi.nlm.nih.gov/28480056/
+  - text: "OCEBM Levels of Evidence Working Group. The Oxford 2011 Levels of Evidence. Oxford Centre for Evidence-Based Medicine; 2011."
+    url: https://www.cebm.ox.ac.uk/resources/levels-of-evidence/ocebm-levels-of-evidence
+  - text: "Russo F, Williamson J. Interpreting causality in the health sciences. Int Stud Philos Sci. 2007;21(2):157–170."
+    url: https://doi.org/10.1080/02698590701498084
   - text: "Guyatt GH, Oxman AD, Vist GE, et al. GRADE: an emerging consensus on rating quality of evidence and strength of recommendations. BMJ. 2008;336(7650):924–926."
     url: https://doi.org/10.1136/bmj.39489.470347.AD
   - text: "Smith GCS, Pell JP. Parachute use to prevent death and major trauma related to gravitational challenge: systematic review of randomised controlled trials. BMJ. 2003;327(7429):1459–1461."
@@ -68,13 +74,17 @@ To decide what counts as “best”, evidence is usually ranked from strongest t
 
 “Translational medicine” is not a rung. It is the route between them: the work of carrying discoveries from the laboratory into human trials, and then from trials into everyday care [3](#ref-3). Theory and mechanism enter at the bottom of the ladder, and translation is how an idea climbs it.
 
+These terms describe different things, which is why they are so easily confused. The ladder ranks study designs by how well they protect against bias. Translational medicine describes stages of research, usually numbered from T0 (the laboratory) to T4 (whole populations) [4](#ref-4). “Clinical evidence” simply means any study in people. What is sometimes called “theoretical medicine” matches the bottom rung, which the Oxford Centre for Evidence-Based Medicine formally names “mechanism-based reasoning” [5](#ref-5). A newer school of thought, known as EBM+, argues that mechanism deserves more weight than the ladder gives it: a claim that one thing causes another is strongest when evidence of correlation and evidence of mechanism agree [6](#ref-6). Figure 2 shows how these ideas line up.
+
+{{figure:grid}}
+
 ## A guide, not a verdict
 
 The ladder comes with two important caveats.
 
-First, the type of study is only a starting point. The GRADE system, used by NICE and the World Health Organization, starts trials at “high” certainty and then downgrades them for risk of bias, inconsistent results, indirectness (studying a different population or outcome from the one that matters), imprecision and publication bias. It can upgrade observational evidence when effects are large and consistent [4](#ref-4). A badly run trial can be worth less than a good observational study. For the same reason, one group of researchers argues that systematic reviews are better seen as a lens for viewing evidence than as the top rung, because a careful review of biased trials is still biased [2](#ref-2).
+First, the type of study is only a starting point. The GRADE system, used by NICE and the World Health Organization, starts trials at “high” certainty and then downgrades them for risk of bias, inconsistent results, indirectness (studying a different population or outcome from the one that matters), imprecision and publication bias. It can upgrade observational evidence when effects are large and consistent [7](#ref-7). A badly run trial can be worth less than a good observational study. For the same reason, one group of researchers argues that systematic reviews are better seen as a lens for viewing evidence than as the top rung, because a careful review of biased trials is still biased [2](#ref-2).
 
-Second, some things are never trialled. A famous, tongue-in-cheek systematic review found no randomised trials of parachutes [5](#ref-5). Nobody doubts parachutes: when mechanism and observation are overwhelming, we act on them. Careful reasoning about mechanisms is legitimate evidence [6](#ref-6). And a trial that finds no effect has not necessarily shown there is no effect. In a phrase statisticians often repeat, “absence of evidence is not evidence of absence” [7](#ref-7).
+Second, some things are never trialled. A famous, tongue-in-cheek systematic review found no randomised trials of parachutes [8](#ref-8). Nobody doubts parachutes: when mechanism and observation are overwhelming, we act on them. Careful reasoning about mechanisms is legitimate evidence [9](#ref-9). And a trial that finds no effect has not necessarily shown there is no effect. In a phrase statisticians often repeat, “absence of evidence is not evidence of absence” [10](#ref-10).
 
 ## Where the ladder fails
 
@@ -82,35 +92,35 @@ The ladder assumes that the right questions are asked, in the right patients, wi
 
 ### ME/CFS: a high rung on a weak foundation
 
-The PACE trial, published in 2011, randomised 641 people and concluded that cognitive behavioural therapy (CBT) and graded exercise therapy (GET) were moderately effective [8](#ref-8). A large RCT sits near the top of the ladder, and PACE was highly influential.
+The PACE trial, published in 2011, randomised 641 people and concluded that cognitive behavioural therapy (CBT) and graded exercise therapy (GET) were moderately effective [11](#ref-11). A large RCT sits near the top of the ladder, and PACE was highly influential.
 
-But its design had a serious weakness. Participants and therapists knew which treatment was being given, and the main outcomes were self-reported questionnaires. Across 1,346 trials, a lack of blinding was found to exaggerate treatment effects when outcomes were subjective [9](#ref-9). When independent researchers obtained the PACE data and applied the recovery definition from the trial's original protocol, recovery rates were “consistently low and not significantly different across treatment groups” [10](#ref-10). PACE also used a definition of the illness that does not require post-exertional malaise (PEM): the worsening of symptoms after effort that the US Institute of Medicine calls a primary feature that helps distinguish ME/CFS from other conditions [11](#ref-11).
+But its design had a serious weakness. Participants and therapists knew which treatment was being given, and the main outcomes were self-reported questionnaires. Across 1,346 trials, a lack of blinding was found to exaggerate treatment effects when outcomes were subjective [12](#ref-12). When independent researchers obtained the PACE data and applied the recovery definition from the trial's original protocol, recovery rates were “consistently low and not significantly different across treatment groups” [13](#ref-13). PACE also used a definition of the illness that does not require post-exertional malaise (PEM): the worsening of symptoms after effort that the US Institute of Medicine calls a primary feature that helps distinguish ME/CFS from other conditions [14](#ref-14).
 
-In 2021, NICE reviewed the evidence using GRADE. It judged the evidence for CBT and GET to be of low or very low certainty, downgraded studies that did not require PEM for indirectness, and advised against any programme based on fixed, incremental increases in exercise [12](#ref-12). Once its quality was examined, the study's high place on the ladder did not hold up.
+In 2021, NICE reviewed the evidence using GRADE. It judged the evidence for CBT and GET to be of low or very low certainty, downgraded studies that did not require PEM for indirectness, and advised against any programme based on fixed, incremental increases in exercise [15](#ref-15). Once its quality was examined, the study's high place on the ladder did not hold up.
 
-Meanwhile, the biological research that could explain the illness has been starved of funds. In the United States, the burden of ME/CFS has been estimated at twice that of HIV/AIDS, yet it has been among the lowest-funded diseases at the National Institutes of Health [13](#ref-13). The most detailed NIH study so far examined 17 people with the illness [14](#ref-14), and its central interpretation, an “altered effort preference”, has since been formally challenged [15](#ref-15). Small studies produce contested findings. Contested findings are then summarised as “no good evidence”, and “no good evidence” is used to justify little funding.
+Meanwhile, the biological research that could explain the illness has been starved of funds. In the United States, the burden of ME/CFS has been estimated at twice that of HIV/AIDS, yet it has been among the lowest-funded diseases at the National Institutes of Health [16](#ref-16). The most detailed NIH study so far examined 17 people with the illness [17](#ref-17), and its central interpretation, an “altered effort preference”, has since been formally challenged [18](#ref-18). Small studies produce contested findings. Contested findings are then summarised as “no good evidence”, and “no good evidence” is used to justify little funding.
 
 {{figure:loop}}
 
 ### Long COVID: mechanism first, trials second
 
-Long COVID shows translation working as intended, from the bottom of the ladder up. Within three years, researchers had mapped several leading explanations, including virus persisting in the body, immune dysregulation, autoimmunity, reactivation of dormant viruses, blood clotting and blood-vessel damage, and problems with the autonomic nervous system [16](#ref-16).
+Long COVID shows translation working as intended, from the bottom of the ladder up. Within three years, researchers had mapped several leading explanations, including virus persisting in the body, immune dysregulation, autoimmunity, reactivation of dormant viruses, blood clotting and blood-vessel damage, and problems with the autonomic nervous system [19](#ref-19).
 
-But a plausible mechanism is not proof that a treatment works. When a blinded, placebo-controlled trial tested a 15-day course of the antiviral nirmatrelvir–ritonavir, it found no significant improvement in symptoms [17](#ref-17). That result protected patients from a treatment that, in that form, did not help. It did not disprove viral persistence: it ruled out one drug, at one dose and duration, in one group of patients [7](#ref-7). The lesson for ME/CFS is not that trials are the problem. It is that trials have to be good ones.
+But a plausible mechanism is not proof that a treatment works. When a blinded, placebo-controlled trial tested a 15-day course of the antiviral nirmatrelvir–ritonavir, it found no significant improvement in symptoms [20](#ref-20). That result protected patients from a treatment that, in that form, did not help. It did not disprove viral persistence: it ruled out one drug, at one dose and duration, in one group of patients [10](#ref-10). The lesson for ME/CFS is not that trials are the problem. It is that trials have to be good ones.
 
 ### hEDS: evidence that was never gathered
 
-For 12 of the 13 types of Ehlers–Danlos syndrome, diagnosis is confirmed by finding the causative genetic variant. For the hypermobile type, no genetic cause has been found, so diagnosis rests on clinical criteria alone [18](#ref-18). Evidence on treatment is just as thin. A 2021 systematic review of physiotherapy for hEDS found only six randomised trials, with between 20 and 57 participants each [19](#ref-19). Here, low-certainty evidence reflects how little has been studied, not proof that treatments fail. Clinicians and patients are left relying on the lower rungs, such as clinical experience, mechanism and expert consensus [20](#ref-20). They rely on them by default, not by choice.
+For 12 of the 13 types of Ehlers–Danlos syndrome, diagnosis is confirmed by finding the causative genetic variant. For the hypermobile type, no genetic cause has been found, so diagnosis rests on clinical criteria alone [21](#ref-21). Evidence on treatment is just as thin. A 2021 systematic review of physiotherapy for hEDS found only six randomised trials, with between 20 and 57 participants each [22](#ref-22). Here, low-certainty evidence reflects how little has been studied, not proof that treatments fail. Clinicians and patients are left relying on the lower rungs, such as clinical experience, mechanism and expert consensus [23](#ref-23). They rely on them by default, not by choice.
 
 ## For clinicians and researchers
 
-- **Blinding and subjective outcomes.** In meta-epidemiological data, trials with subjective outcomes and no blinding overestimated effects (ratio of odds ratios 0.75) [9](#ref-9). Behavioural and rehabilitation trials cannot blind participants, so they need objective primary outcomes (such as actigraphy, return to work or school, or cardiopulmonary exercise testing), blinded outcome assessment, and analyses reported exactly as pre-registered.
-- **Case definitions are an indirectness problem.** Criteria that do not require PEM recruit mixed populations. Downgrading such evidence under GRADE is methodologically appropriate, not special pleading [4](#ref-4), [12](#ref-12).
+- **Blinding and subjective outcomes.** In meta-epidemiological data, trials with subjective outcomes and no blinding overestimated effects (ratio of odds ratios 0.75) [12](#ref-12). Behavioural and rehabilitation trials cannot blind participants, so they need objective primary outcomes (such as actigraphy, return to work or school, or cardiopulmonary exercise testing), blinded outcome assessment, and analyses reported exactly as pre-registered.
+- **Case definitions are an indirectness problem.** Criteria that do not require PEM recruit mixed populations. Downgrading such evidence under GRADE is methodologically appropriate, not special pleading [7](#ref-7), [15](#ref-15).
 - **Who is missing.** A trial that requires attending a clinic cannot, by design, include the housebound or bedbound. Applying its results to severe disease is extrapolation, and should be graded as such.
-- **Designing for delayed harm.** PEM can be delayed relative to its trigger [11](#ref-11). Adverse-event monitoring with short windows, or measured only at clinic visits, will under-detect it.
-- **Interpreting null results.** Report confidence intervals against a pre-specified minimal clinically important difference. An underpowered null result is uninformative, not negative [7](#ref-7).
-- **Using mechanistic evidence.** High-quality mechanistic reasoning accounts for complexity and incomplete causal chains [6](#ref-6). Use it to prioritise and design trials, not to replace them.
-- **Funding in proportion to burden.** The quality of evidence for a condition depends on what its research has been funded to produce [13](#ref-13).
+- **Designing for delayed harm.** PEM can be delayed relative to its trigger [14](#ref-14). Adverse-event monitoring with short windows, or measured only at clinic visits, will under-detect it.
+- **Interpreting null results.** Report confidence intervals against a pre-specified minimal clinically important difference. An underpowered null result is uninformative, not negative [10](#ref-10).
+- **Using mechanistic evidence.** High-quality mechanistic reasoning accounts for complexity and incomplete causal chains [9](#ref-9). Use it to prioritise and design trials, not to replace them.
+- **Funding in proportion to burden.** The quality of evidence for a condition depends on what its research has been funded to produce [16](#ref-16).
 
 ## Five questions to ask of any claim
 
