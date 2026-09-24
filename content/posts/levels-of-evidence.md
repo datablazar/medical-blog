@@ -1,9 +1,9 @@
 ---
-title: Strong evidence, weak evidence, and the conditions it fails
-summary: How medicine ranks what it knows, from meta-analyses down to expert opinion, and why that ranking has so often worked against people with ME/CFS, long COVID and hypermobile EDS.
+title: Best available evidence, and the conditions that need it
+summary: How medicine ranks what it knows, why evidence-based medicine means using the best evidence available rather than waiting for perfect evidence, and what that means for ME/CFS, long COVID and hypermobile EDS.
 topic: The basics
 date: 2026-09-24
-readingTime: 8
+readingTime: 10
 references:
   - text: "Sackett DL, Rosenberg WM, Gray JA, Haynes RB, Richardson WS. Evidence based medicine: what it is and what it isn't. BMJ. 1996;312(7023):71–72."
     url: https://doi.org/10.1136/bmj.312.7023.71
@@ -51,15 +51,17 @@ references:
     url: https://doi.org/10.1002/ajmg.a.62393
   - text: "Engelbert RHH, Juul-Kristensen B, Pacey V, et al. The evidence-based rationale for physical therapy treatment of children, adolescents, and adults diagnosed with joint hypermobility syndrome/hypermobile Ehlers Danlos syndrome. Am J Med Genet C Semin Med Genet. 2017;175(1):158–167."
     url: https://doi.org/10.1002/ajmg.c.31545
+  - text: "National Institute for Health and Care Excellence. Shared decision making (NG197). London: NICE; 2021."
+    url: https://www.nice.org.uk/guidance/ng197
 ---
 
 As a medical student, I was taught to rank evidence like the rungs of a ladder: pooled trials at the top, expert opinion at the bottom. It is a good tool, and I still use it. Then I became ill, and found myself on the other side of it. I was told, in effect, to distrust myself and my own body, because the evidence said nothing was wrong. It took me years to understand that “no evidence” rarely meant someone had looked carefully and found nothing. More often, it meant nobody had looked carefully at all.
 
-This article explains how medicine ranks evidence, why that ranking matters, and where it breaks down for three conditions: ME/CFS, long COVID and hypermobile Ehlers–Danlos syndrome (hEDS).
+None of this is an argument against evidence-based medicine. It is an argument for practising it as it was designed. This article explains how medicine ranks evidence, what it should do when the best kind of evidence is missing, and why that matters for three conditions: ME/CFS, long COVID and hypermobile Ehlers–Danlos syndrome (hEDS).
 
 ## The ladder of evidence
 
-Evidence-based medicine was defined in 1996 as “the conscientious, explicit, and judicious use of current best evidence in making decisions about the care of individual patients”. Its founders were clear that this means combining research with clinical expertise and the patient's own circumstances, not following trials alone [1](#ref-1).
+Evidence-based medicine was defined in 1996 as “the conscientious, explicit, and judicious use of current best evidence in making decisions about the care of individual patients”. Its founders were clear that this means combining research with clinical expertise and the patient's own circumstances, not following trials alone. They also said what to do when the best kind of study does not exist: “if no randomised trial has been carried out for our patient's predicament, we must follow the trail to the next best external evidence and work from there” [1](#ref-1).
 
 To decide what counts as “best”, evidence is usually ranked from strongest to weakest [2](#ref-2):
 
@@ -86,9 +88,9 @@ First, the type of study is only a starting point. The GRADE system, used by NIC
 
 Second, some things are never trialled. A famous, tongue-in-cheek systematic review found no randomised trials of parachutes [8](#ref-8). Nobody doubts parachutes: when mechanism and observation are overwhelming, we act on them. Careful reasoning about mechanisms is legitimate evidence [9](#ref-9). And a trial that finds no effect has not necessarily shown there is no effect. In a phrase statisticians often repeat, “absence of evidence is not evidence of absence” [10](#ref-10).
 
-## Where the ladder fails
+## Where the evidence falls short
 
-The ladder assumes that the right questions are asked, in the right patients, with fair measurements and enough funding. For medically unexplained conditions, each of those assumptions has failed at some point.
+The ladder itself is sound, but it assumes that the right questions are asked, in the right patients, with fair measurements and enough funding. For medically unexplained conditions, each of those assumptions has failed at some point.
 
 ### ME/CFS: a high rung on a weak foundation
 
@@ -112,6 +114,18 @@ But a plausible mechanism is not proof that a treatment works. When a blinded, p
 
 For 12 of the 13 types of Ehlers–Danlos syndrome, diagnosis is confirmed by finding the causative genetic variant. For the hypermobile type, no genetic cause has been found, so diagnosis rests on clinical criteria alone [21](#ref-21). Evidence on treatment is just as thin. A 2021 systematic review of physiotherapy for hEDS found only six randomised trials, with between 20 and 57 participants each [22](#ref-22). Here, low-certainty evidence reflects how little has been studied, not proof that treatments fail. Clinicians and patients are left relying on the lower rungs, such as clinical experience, mechanism and expert consensus [23](#ref-23). They rely on them by default, not by choice.
 
+## Best available evidence, not all or nothing
+
+When a gold-standard trial does not exist, everyday practice too often becomes all or nothing: a treatment is either proven by large trials, or it is treated as if there were no evidence at all. That is not how evidence-based medicine was meant to work. Its founders asked clinicians to follow the trail to the next best evidence [1](#ref-1), and for each of these conditions there is often a great deal of it: consistent observational studies, clinical experience, mechanistic research and expert consensus that can already guide treatment and management.
+
+Using the lower rungs responsibly means three things.
+
+1. **Match caution to the stakes.** Where the alternative is severe, long-lasting, life-changing illness, a reasonable treatment with lower-certainty evidence and a known safety profile may be worth trying. Where the risks are high, or the evidence points to harm, as NICE found for graded exercise in ME/CFS [15](#ref-15), it is not.
+2. **Decide together, with informed consent.** The patient should understand what the evidence does and does not show, how uncertain it is, and what the alternatives are, including doing nothing. NICE's guideline on shared decision making sets out this approach for all care [24](#ref-24).
+3. **Treat every decision as data.** Recording outcomes in a structured way turns individual decisions into evidence. An n-of-1 trial, in which one patient compares treatments over planned periods, is ranked at the top level of the Oxford table for deciding whether a treatment helps that person [5](#ref-5).
+
+Evidence gathered this way helps more than the person in front of you. It shows which treatments look promising and which do not, which is exactly the information needed to decide which large trials are worth funding. Used well, the lower rungs are how the ladder gets built.
+
 ## For clinicians and researchers
 
 - **Blinding and subjective outcomes.** In meta-epidemiological data, trials with subjective outcomes and no blinding overestimated effects (ratio of odds ratios 0.75) [12](#ref-12). Behavioural and rehabilitation trials cannot blind participants, so they need objective primary outcomes (such as actigraphy, return to work or school, or cardiopulmonary exercise testing), blinded outcome assessment, and analyses reported exactly as pre-registered.
@@ -119,6 +133,8 @@ For 12 of the 13 types of Ehlers–Danlos syndrome, diagnosis is confirmed by fi
 - **Who is missing.** A trial that requires attending a clinic cannot, by design, include the housebound or bedbound. Applying its results to severe disease is extrapolation, and should be graded as such.
 - **Designing for delayed harm.** PEM can be delayed relative to its trigger [14](#ref-14). Adverse-event monitoring with short windows, or measured only at clinic visits, will under-detect it.
 - **Interpreting null results.** Report confidence intervals against a pre-specified minimal clinically important difference. An underpowered null result is uninformative, not negative [10](#ref-10).
+- **Certainty is not a veto.** A low or very low GRADE rating describes confidence in an estimate, not proof of no effect. GRADE separates the certainty of evidence from the strength of a recommendation, which also weighs benefits, harms, values and preferences [7](#ref-7). Conditional recommendations on low-certainty evidence are legitimate when the balance favours them.
+- **Capturing practice as evidence.** Structured outcome recording, registries and series of n-of-1 trials can turn off-guideline treatment into usable evidence [5](#ref-5), and help prioritise which definitive trials to fund.
 - **Using mechanistic evidence.** High-quality mechanistic reasoning accounts for complexity and incomplete causal chains [9](#ref-9). Use it to prioritise and design trials, not to replace them.
 - **Funding in proportion to burden.** The quality of evidence for a condition depends on what its research has been funded to produce [16](#ref-16).
 
@@ -130,4 +146,4 @@ For 12 of the 13 types of Ehlers–Danlos syndrome, diagnosis is confirmed by fi
 4. **How big was the effect, and in how many people?**
 5. **Does “no evidence” mean the idea was tested and failed, or that it was never properly tested?**
 
-Evidence-based medicine was built to protect patients from confident mistakes. For people with these conditions, it has too often been used to make them. The answer is not less evidence, but better evidence: larger, fairer, properly funded studies that measure what matters to patients.
+Evidence-based medicine was built to protect patients from confident mistakes, and it still does. For people with these conditions, the more common mistake has been a different one: treating missing evidence as a verdict. The answer is to practise evidence-based medicine as it was designed: use the best evidence available today, decide with patients rather than for them, and fund the larger, fairer studies that will replace uncertainty with answers.
