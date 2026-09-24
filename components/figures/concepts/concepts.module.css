@@ -1,0 +1,24 @@
+.svg { display: block; width: 100%; height: auto; font-family: var(--font-sans); }
+.mono { font-family: var(--font-mono); font-weight: 500; }
+.t14 { font-size: 14px; }
+.t15 { font-size: 15px; }
+.t16 { font-size: 16px; }
+.t18 { font-size: 18px; }
+.ink { fill: var(--ink); }
+.muted { fill: var(--ink-muted); }
+.coralText { fill: var(--coral-text); }
+.onInk { fill: var(--on-ink); }
+.bold { font-weight: 600; }
+.surface { fill: var(--surface); }
+.white { fill: var(--white); }
+.tint { fill: var(--coral-tint); }
+.inkFill { fill: var(--ink); }
+.coralFill { fill: var(--coral); }
+.line { stroke: var(--line); fill: none; }
+.lineStrong { stroke: var(--line-strong); fill: none; }
+.inkStroke { stroke: var(--ink); fill: none; }
+.coralStroke { stroke: var(--coral); fill: none; }
+.dashed { stroke-dasharray: 6 5; }
+.w15 { stroke-width: 1.5; }
+.w2 { stroke-width: 2; }
+.w25 { stroke-width: 2.5; }
