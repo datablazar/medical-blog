@@ -27,7 +27,7 @@ export function PemChart() {
       ))}
       <line x1="60" y1="250" x2="700" y2="250" className={styles.axis} />
       <rect x={X(0) - 4} y="170" width="14" height="80" rx="3" className={styles.activity} />
-      <text x={X(0) + 18} y="186" className={styles.strong}>Activity</text>
+      <text x={X(0) - 4} y="158" className={styles.strong}>Activity</text>
       <text x={X(12) + 8} y="236" className={styles.label}>Typical onset window, 12–48 h</text>
       <path d={curve} className={styles.curve} pathLength={1} />
       <circle cx={X(38)} cy={Y(0.85)} r="4" className={styles.peak} />

@@ -4,18 +4,18 @@ html { -webkit-text-size-adjust: 100%; }
 
 body {
   margin: 0;
-  background: var(--white);
+  background: var(--page);
   color: var(--ink);
   font-family: var(--font-sans);
-  font-size: 17px;
-  line-height: 28px;
+  font-size: var(--text-body);
+  line-height: var(--leading-body);
   -webkit-font-smoothing: antialiased;
   overflow-x: clip;
 }
 
 h1, h2, h3, p, blockquote, figure { margin: 0; }
 
-a { color: inherit; }
+a { color: inherit; text-underline-offset: 0.2em; }
 
 :focus-visible { outline: 2px solid var(--coral); outline-offset: 3px; border-radius: var(--radius-sm); }
 
@@ -44,11 +44,11 @@ a { color: inherit; }
 .label {
   display: inline-flex;
   gap: var(--space-3);
-  font-family: var(--font-mono);
-  font-size: 12px;
-  line-height: 16px;
-  letter-spacing: 0.04em;
-  text-transform: uppercase;
+  font-family: var(--font-mono); font-weight: 500;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 21px;
+  letter-spacing: 0;
   color: var(--ink-muted);
 }
 

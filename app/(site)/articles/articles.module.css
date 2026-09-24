@@ -1,10 +1,10 @@
 .header { padding-top: 72px; padding-bottom: var(--space-12); }
 
-.title { margin-top: var(--space-6); max-width: 16ch; font-size: clamp(40px, 5vw, 64px); line-height: 1.04; font-weight: 600; letter-spacing: -0.04em; }
+.title { margin-top: var(--space-6); max-width: 16ch; font-size: clamp(40px, 5vw, 64px); line-height: 1.04; font-weight: 600; letter-spacing: -0.02em; }
 
 .title em { font-style: normal; color: var(--ink-muted); }
 
-.lede { margin-top: var(--space-6); max-width: 36em; font-size: 19px; line-height: 31px; color: var(--ink-muted); }
+.lede { margin-top: var(--space-6); max-width: 36em; font-size: 21px; line-height: 34px; color: var(--ink-muted); }
 
 .section { padding-top: var(--space-10); padding-bottom: var(--space-12); }
 
@@ -25,13 +25,13 @@
 
 .card:hover { background: var(--navy); transform: translateY(-2px); }
 
-.topic { font-family: var(--font-mono); font-size: 12px; line-height: 16px; letter-spacing: 0.04em; text-transform: uppercase; color: var(--coral); }
+.topic { font-family: var(--font-mono); font-weight: 500; font-size: 14px; line-height: 21px; letter-spacing: 0; color: var(--coral); }
 
-.cardTitle { font-size: 30px; line-height: 34px; font-weight: 600; letter-spacing: -0.03em; }
+.cardTitle { font-size: 30px; line-height: 34px; font-weight: 600; letter-spacing: -0.015em; }
 
-.summary { flex: 1; font-size: 16px; line-height: 25px; color: var(--on-ink-muted); }
+.summary { flex: 1; font-size: 17px; line-height: 26px; color: var(--on-ink-muted); }
 
-.meta { display: flex; justify-content: space-between; gap: var(--space-4); margin-top: var(--space-4); font-family: var(--font-mono); font-size: 12px; color: var(--on-ink-muted); }
+.meta { display: flex; justify-content: space-between; gap: var(--space-4); margin-top: var(--space-4); font-family: var(--font-mono); font-weight: 500; font-size: 14px; color: var(--on-ink-muted); }
 
 .arrow { color: var(--coral); }
 
@@ -39,9 +39,9 @@
 
 .row { display: grid; grid-template-columns: 1fr 200px; gap: var(--space-6); padding: 18px 0; border-bottom: 1px solid var(--line); align-items: baseline; }
 
-.rowTitle { font-size: 20px; line-height: 28px; font-weight: 500; letter-spacing: -0.02em; color: var(--ink-muted); }
+.rowTitle { font-size: 21px; line-height: 34px; font-weight: 500; letter-spacing: -0.01em; color: var(--ink-muted); }
 
-.rowTopic { font-family: var(--font-mono); font-size: 12px; color: var(--ink-muted); text-align: right; }
+.rowTopic { font-family: var(--font-mono); font-weight: 500; font-size: 14px; color: var(--ink-muted); text-align: right; }
 
 @media (max-width: 600px) {
   .list { grid-template-columns: 1fr; }

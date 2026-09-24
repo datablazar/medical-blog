@@ -1,10 +1,11 @@
-/* Medically Explained · Instrument. Mirrors design-system/tokens.json. */
+/* Medically Explained · Instrument (readable edition). Mirrors design-system/tokens.json. */
 :root {
   /* Colour */
+  --page: #fbfbf9;
   --white: #ffffff;
   --surface: #f5f7fa;
   --ink: #0b1624;
-  --ink-muted: #566273;
+  --ink-muted: #4b5563;
   --navy: #13294b;
   --on-ink: #ffffff;
   --on-ink-muted: #a9b4c3;
@@ -42,6 +43,11 @@
   --measure: 36em;
 
   /* Type families (font files are loaded by next/font in app/layout.tsx) */
-  --font-sans: var(--font-geist), "Helvetica Neue", Arial, system-ui, sans-serif;
-  --font-mono: var(--font-geist-mono), ui-monospace, "SFMono-Regular", Menlo, monospace;
+  --font-sans: var(--font-lexend), Verdana, Tahoma, system-ui, sans-serif;
+  --font-mono: var(--font-atkinson-mono), ui-monospace, "SFMono-Regular", Menlo, monospace;
+
+  /* Reading */
+  --text-body: 19px;
+  --leading-body: 1.65;
+  --measure-read: 64ch;
 }
