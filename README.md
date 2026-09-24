@@ -20,7 +20,7 @@ https://claude.ai/artifact/WyLbrrsnW1w1YB5Y7WEAcQ (brand book, tokens and rules)
 ## Structure
 
 - `design-system/tokens.json`: a copy of the design system's tokens (the source of truth).
-- `app/tokens.css`: the tokens as CSS custom properties. Fonts (Geist, Geist Mono) load in `app/layout.tsx`.
+- `app/tokens.css`: the tokens as CSS custom properties. Fonts (Lexend for text, Atkinson Hyperlegible Mono for numbers and labels) load in `app/layout.tsx`, chosen for readers with brain fog.
 - `app/globals.css`: base styles, `.container`, `.rule-top` and the `.label` section label.
 - `app/(site)/`: the Home and About pages, sharing the header and footer layout.
 - `components/`: `SiteHeader`, `SiteFooter`, `Logo`, `Dial` (the brand's condition dial) and `PemChart` (Fig. 1).

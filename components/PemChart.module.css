@@ -21,8 +21,8 @@
 
 .peak { fill: var(--white); stroke: var(--coral); stroke-width: 2.5; }
 
-.label { font-family: var(--font-mono); font-size: 11px; fill: var(--ink-muted); }
+.label { font-family: var(--font-mono); font-weight: 500; font-size: 14px; fill: var(--ink-muted); }
 
-.strong { font-family: var(--font-mono); font-size: 11px; fill: var(--ink); font-weight: 500; }
+.strong { font-family: var(--font-mono); font-weight: 500; font-size: 14px; fill: var(--ink); }
 
 @media (prefers-reduced-motion: reduce) { .curve { animation: none; } }

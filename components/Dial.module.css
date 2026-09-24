@@ -4,17 +4,13 @@
 
 .tickLong { stroke: var(--ink); stroke-width: 1.5; }
 
-.tickRing { transform-origin: 260px 260px; animation: spin 120s linear infinite; }
-
-@keyframes spin { to { transform: rotate(360deg); } }
-
 .ring { fill: none; stroke: var(--line-strong); }
 
 .arc { fill: none; stroke: var(--ink); stroke-width: 10; stroke-linecap: round; opacity: 0.12; }
 
 .arcActive { fill: none; stroke: var(--coral); stroke-width: 10; stroke-linecap: round; }
 
-.label { font-family: var(--font-mono); font-size: 12px; fill: var(--ink); letter-spacing: 0.02em; }
+.label { font-family: var(--font-mono); font-weight: 500; font-size: 14px; fill: var(--ink); letter-spacing: 0; }
 
 .needle {
   stroke: var(--coral);
@@ -29,6 +25,6 @@
 
 .hub { fill: var(--ink); }
 
-.caption { font-family: var(--font-mono); font-size: 11px; fill: var(--ink-muted); text-transform: uppercase; letter-spacing: 0.08em; }
+.caption { font-family: var(--font-mono); font-weight: 500; font-size: 14px; fill: var(--ink-muted); letter-spacing: 0; }
 
-@media (prefers-reduced-motion: reduce) { .tickRing, .needle { animation: none; } }
+@media (prefers-reduced-motion: reduce) { .needle { animation: none; } }
